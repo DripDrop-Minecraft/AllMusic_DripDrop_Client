@@ -1,6 +1,6 @@
-package coloryr.allmusic.mixin;
+package Coloryr.AllMusic.mixin;
 
-import coloryr.allmusic.AllMusic;
+import Coloryr.AllMusic.AllMusic;
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

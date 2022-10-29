@@ -24,7 +24,7 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-package coloryr.allmusic.player.decoder.ogg.jcraft.jorbis;
+package Coloryr.AllMusic.player.decoder.ogg.jcraft.jorbis;
 
 class PsyLook {
     int n;

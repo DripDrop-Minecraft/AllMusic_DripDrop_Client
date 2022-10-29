@@ -1,6 +1,6 @@
-package coloryr.allmusic.mixin;
+package Coloryr.AllMusic.mixin;
 
-import coloryr.allmusic.AllMusic;
+import Coloryr.AllMusic.AllMusic;
 import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.client.util.math.MatrixStack;
 import org.spongepowered.asm.mixin.Mixin;

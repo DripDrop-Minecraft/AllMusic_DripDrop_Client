@@ -37,7 +37,7 @@
  *----------------------------------------------------------------------
  */
 
-package coloryr.allmusic.player.decoder.mp3;
+package Coloryr.AllMusic.player.decoder.mp3;
 
 /**
  * Class to implements Huffman decoder.

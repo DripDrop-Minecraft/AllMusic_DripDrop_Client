@@ -1,12 +1,11 @@
-package coloryr.allmusic.player;
+package Coloryr.AllMusic.player;
 
-import coloryr.allmusic.AllMusic;
-import coloryr.allmusic.player.decoder.BuffPack;
-import coloryr.allmusic.player.decoder.IDecoder;
-import coloryr.allmusic.player.decoder.flac.DataFormatException;
-import coloryr.allmusic.player.decoder.flac.FlacDecoder;
-import coloryr.allmusic.player.decoder.mp3.Mp3Decoder;
-import coloryr.allmusic.player.decoder.ogg.OggDecoder;
+import Coloryr.AllMusic.AllMusic;
+import Coloryr.AllMusic.player.decoder.BuffPack;
+import Coloryr.AllMusic.player.decoder.IDecoder;
+import Coloryr.AllMusic.player.decoder.flac.FlacDecoder;
+import Coloryr.AllMusic.player.decoder.mp3.Mp3Decoder;
+import Coloryr.AllMusic.player.decoder.ogg.OggDecoder;
 import org.apache.http.ConnectionClosedException;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -24,8 +23,6 @@ import java.net.URL;
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.*;
 
@@ -137,7 +134,6 @@ public class APlayer extends InputStream {
                     connect();
                 } catch (Exception e) {
                     e.printStackTrace();
-                    AllMusic.sendMessage("[AllMusic客户端]获取音乐失败");
                     continue;
                 }
 
@@ -151,7 +147,6 @@ public class APlayer extends InputStream {
                         connect();
                         decoder = new Mp3Decoder(this);
                         if (!decoder.set()) {
-                            AllMusic.sendMessage("[AllMusic客户端]不支持这样的文件播放");
                             continue;
                         }
                     }

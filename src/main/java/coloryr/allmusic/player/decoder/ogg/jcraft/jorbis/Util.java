@@ -1,4 +1,4 @@
-package coloryr.allmusic.player.decoder.ogg.jcraft.jorbis;
+package Coloryr.AllMusic.player.decoder.ogg.jcraft.jorbis;
 
 class Util {
     static int ilog(int v) {

@@ -33,9 +33,9 @@
  *----------------------------------------------------------------------
  */
 
-package coloryr.allmusic.player.decoder.mp3;
+package Coloryr.AllMusic.player.decoder.mp3;
 
-import coloryr.allmusic.player.APlayer;
+import Coloryr.AllMusic.player.APlayer;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

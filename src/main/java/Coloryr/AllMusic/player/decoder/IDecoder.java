@@ -1,4 +1,4 @@
-package coloryr.allmusic.player.decoder;
+package Coloryr.AllMusic.player.decoder;
 
 public interface IDecoder {
     BuffPack decodeFrame() throws Exception;

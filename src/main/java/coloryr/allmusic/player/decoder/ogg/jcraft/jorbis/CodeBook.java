@@ -24,9 +24,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-package coloryr.allmusic.player.decoder.ogg.jcraft.jorbis;
+package Coloryr.AllMusic.player.decoder.ogg.jcraft.jorbis;
 
-import coloryr.allmusic.player.decoder.ogg.jcraft.jogg.Buffer;
+import Coloryr.AllMusic.player.decoder.ogg.jcraft.jogg.Buffer;
 
 class CodeBook {
     int dim; // codebook dimensions (elements per vector)

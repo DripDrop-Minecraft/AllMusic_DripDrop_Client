@@ -3,14 +3,15 @@
   "id": "allmusic",
   "version": "${version}",
 
-  "name": "AllMusic",
-  "description": "A allmusic mod",
+  "name": "AllMusic for DripDrop",
+  "description": "Customized for DripDrop, based on Coloryr's project",
   "authors": [
-    "Color_yr"
+    "Color_yr",
+    "Dell_G3"
   ],
   "contact": {
-    "homepage": "https://github.com/coloryr/AllMusic_M/",
-    "sources": "https://github.com/coloryr/AllMusic_M/"
+    "homepage": "https://www.yuque.com/dripdrop/minecraft",
+    "sources": "https://github.com/DripDrop-Minecraft/AllMusic_DripDrop_Client"
   },
 
   "license": "CC0-1.0",
@@ -19,7 +20,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "coloryr.allmusic.AllMusic"
+      "Coloryr.AllMusic.AllMusic"
     ]
   },
   "mixins": [

@@ -19,7 +19,7 @@
  *----------------------------------------------------------------------
  */
 
-package coloryr.allmusic.player.decoder.mp3;
+package Coloryr.AllMusic.player.decoder.mp3;
 
 /**
  * This interface describes all error codes that can be thrown

@@ -1,7 +1,8 @@
-package coloryr.allmusic.hud;
+package Coloryr.AllMusic.Hud;
+import Coloryr.AllMusic.hud.PosOBJ;
 
 public class SaveOBJ {
-    private PosOBJ List;
+    private Coloryr.AllMusic.hud.PosOBJ List;
     private PosOBJ Lyric;
     private PosOBJ Info;
     private PosOBJ Pic;

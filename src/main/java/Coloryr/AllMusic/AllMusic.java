@@ -1,7 +1,7 @@
-package coloryr.allmusic;
+package Coloryr.AllMusic;
 
-import coloryr.allmusic.hud.HudUtils;
-import coloryr.allmusic.player.APlayer;
+import Coloryr.AllMusic.Hud.HudUtils;
+import Coloryr.AllMusic.player.APlayer;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -13,12 +13,15 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.Identifier;
 
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class AllMusic implements ModInitializer {
     public static final Identifier ID = new Identifier("allmusic", "channel");
     public static APlayer nowPlaying;
     public static boolean isPlay = false;
     public static HudUtils hudUtils;
+    public static ExecutorService pool = Executors.newFixedThreadPool(10);
 
     public static void onServerQuit() {
         try {
@@ -80,18 +83,14 @@ public class AllMusic implements ModInitializer {
     }
 
     public static void drawPic(int textureID, int size, int x, int y) {
-        RenderSystem.setShader(GameRenderer::getPositionTexShader);
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-        RenderSystem.setShaderTexture(0, textureID);
-        DrawableHelper.drawTexture(stack, x, y, 0, 0, 0, size, size, size, size);
-    }
-
-    public static void sendMessage(String data){
-        MinecraftClient.getInstance().execute(() -> {
-            if (MinecraftClient.getInstance().player == null)
-                return;
-            MinecraftClient.getInstance().player.sendChatMessage(data);
-        });
+        try {
+            RenderSystem.setShader(GameRenderer::getPositionTexShader);
+            RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+            RenderSystem.setShaderTexture(0, textureID);
+            DrawableHelper.drawTexture(stack, x, y, 0, 0, 0, size, size, size, size);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void runMain(Runnable runnable){

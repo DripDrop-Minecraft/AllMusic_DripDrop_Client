@@ -19,12 +19,12 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
-package coloryr.allmusic.player.decoder.flac;
+package Coloryr.AllMusic.player.decoder.flac;
 
-import coloryr.allmusic.AllMusic;
-import coloryr.allmusic.player.APlayer;
-import coloryr.allmusic.player.decoder.BuffPack;
-import coloryr.allmusic.player.decoder.IDecoder;
+import Coloryr.AllMusic.AllMusic;
+import Coloryr.AllMusic.player.APlayer;
+import Coloryr.AllMusic.player.decoder.BuffPack;
+import Coloryr.AllMusic.player.decoder.IDecoder;
 
 import java.io.IOException;
 
@@ -209,6 +209,6 @@ public final class FlacDecoder implements AutoCloseable, IDecoder {
 
     @Override
     public void set(int time) {
-        AllMusic.sendMessage("[AllMusic客户端]不支持中间播放");
+        System.out.println("[AllMusic客户端]不支持中间播放");
     }
 }

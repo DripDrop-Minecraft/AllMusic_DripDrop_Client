@@ -1,18 +1,16 @@
-package coloryr.allmusic.hud;
+package Coloryr.AllMusic.Hud;
 
-import coloryr.allmusic.AllMusic;
+import Coloryr.AllMusic.AllMusic;
 import com.google.gson.Gson;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.TextUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL30;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.nio.ByteBuffer;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedDeque;
@@ -29,15 +27,12 @@ public class HudUtils {
     public final Object lock = new Object();
     private final Queue<String> urlList = new ConcurrentLinkedDeque<>();
     private final Semaphore semaphore = new Semaphore(0);
-    private final HttpClient client;
-    private HttpGet get;
     private InputStream inputStream;
 
     public HudUtils() {
         Thread thread = new Thread(this::run);
         thread.setName("allmusic_pic");
         thread.start();
-        client = HttpClientBuilder.create().useSystemProperties().build();
     }
 
     public void close() {
@@ -47,10 +42,6 @@ public class HudUtils {
     }
 
     private void getClose() {
-        if (get != null && !get.isAborted()) {
-            get.abort();
-            get = null;
-        }
         try {
             if (inputStream != null) {
                 inputStream.close();
@@ -64,10 +55,14 @@ public class HudUtils {
     private void loadPic(String picUrl) {
         try {
             getClose();
-            get = new HttpGet(picUrl);
-            HttpResponse response = client.execute(get);
-            HttpEntity entity = response.getEntity();
-            inputStream = entity.getContent();
+            URL url = new URL(picUrl);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            connection.setConnectTimeout(4 * 1000);
+            connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36 Edg/84.0.522.52");
+            connection.setRequestProperty("Host", "music.163.com");
+            connection.connect();
+            inputStream = connection.getInputStream();
             BufferedImage image = ImageIO.read(inputStream);
             int[] pixels = new int[image.getWidth() * image.getHeight()];
             image.getRGB(0, 0, image.getWidth(), image.getHeight(), pixels, 0, image.getWidth());
@@ -100,7 +95,6 @@ public class HudUtils {
             });
         } catch (Exception e) {
             e.printStackTrace();
-            AllMusic.sendMessage("[AllMusic客户端]图片解析错误");
             haveImg = false;
         }
     }
@@ -111,7 +105,7 @@ public class HudUtils {
                 semaphore.acquire();
                 while (!urlList.isEmpty()) {
                     String picUrl = urlList.poll();
-                    if (picUrl != null) {
+                    if (!TextUtils.isEmpty(picUrl)) {
                         loadPic(picUrl);
                     }
                 }

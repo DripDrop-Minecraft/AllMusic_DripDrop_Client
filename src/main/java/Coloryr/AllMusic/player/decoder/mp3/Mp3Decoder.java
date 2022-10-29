@@ -18,12 +18,12 @@
  *----------------------------------------------------------------------
  */
 
-package coloryr.allmusic.player.decoder.mp3;
+package Coloryr.AllMusic.player.decoder.mp3;
 
-import coloryr.allmusic.player.APlayer;
-import coloryr.allmusic.player.decoder.BuffPack;
-import coloryr.allmusic.player.decoder.IDecoder;
-import coloryr.allmusic.player.decoder.flac.DataFormatException;
+import Coloryr.AllMusic.player.APlayer;
+import Coloryr.AllMusic.player.decoder.BuffPack;
+import Coloryr.AllMusic.player.decoder.IDecoder;
+import Coloryr.AllMusic.player.decoder.flac.DataFormatException;
 
 /**
  * The <code>Decoder</code> class encapsulates the details of

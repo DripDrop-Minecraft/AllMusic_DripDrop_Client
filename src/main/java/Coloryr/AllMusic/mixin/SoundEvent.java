@@ -1,6 +1,6 @@
-package coloryr.allmusic.mixin;
+package Coloryr.AllMusic.mixin;
 
-import coloryr.allmusic.AllMusic;
+import Coloryr.AllMusic.AllMusic;
 import net.minecraft.client.sound.SoundInstance;
 import net.minecraft.client.sound.SoundSystem;
 import net.minecraft.sound.SoundCategory;

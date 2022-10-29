@@ -1,19 +1,19 @@
-package coloryr.allmusic.player.decoder.ogg;
+package Coloryr.AllMusic.player.decoder.ogg;
 
-import coloryr.allmusic.AllMusic;
-import coloryr.allmusic.player.APlayer;
-import coloryr.allmusic.player.decoder.BuffPack;
-import coloryr.allmusic.player.decoder.IDecoder;
-import coloryr.allmusic.player.decoder.flac.DataFormatException;
-import coloryr.allmusic.player.decoder.ogg.jcraft.jogg.Packet;
-import coloryr.allmusic.player.decoder.ogg.jcraft.jogg.Page;
-import coloryr.allmusic.player.decoder.ogg.jcraft.jogg.StreamState;
-import coloryr.allmusic.player.decoder.ogg.jcraft.jogg.SyncState;
-import coloryr.allmusic.player.decoder.ogg.jcraft.jorbis.Block;
-import coloryr.allmusic.player.decoder.ogg.jcraft.jorbis.Comment;
-import coloryr.allmusic.player.decoder.ogg.jcraft.jorbis.DspState;
-import coloryr.allmusic.player.decoder.ogg.jcraft.jorbis.Info;
-import coloryr.allmusic.player.decoder.ogg.jcraft.oggdecoder.OggData;
+import Coloryr.AllMusic.AllMusic;
+import Coloryr.AllMusic.player.APlayer;
+import Coloryr.AllMusic.player.decoder.BuffPack;
+import Coloryr.AllMusic.player.decoder.IDecoder;
+import Coloryr.AllMusic.player.decoder.flac.DataFormatException;
+import Coloryr.AllMusic.player.decoder.ogg.jcraft.jogg.Packet;
+import Coloryr.AllMusic.player.decoder.ogg.jcraft.jogg.Page;
+import Coloryr.AllMusic.player.decoder.ogg.jcraft.jogg.StreamState;
+import Coloryr.AllMusic.player.decoder.ogg.jcraft.jogg.SyncState;
+import Coloryr.AllMusic.player.decoder.ogg.jcraft.jorbis.Block;
+import Coloryr.AllMusic.player.decoder.ogg.jcraft.jorbis.Comment;
+import Coloryr.AllMusic.player.decoder.ogg.jcraft.jorbis.DspState;
+import Coloryr.AllMusic.player.decoder.ogg.jcraft.jorbis.Info;
+import Coloryr.AllMusic.player.decoder.ogg.jcraft.oggdecoder.OggData;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -376,6 +376,6 @@ public class OggDecoder implements IDecoder {
 
     @Override
     public void set(int time) {
-        AllMusic.sendMessage("[AllMusic客户端]不支持中间播放");
+        System.out.println("[AllMusic客户端]不支持中间播放");
     }
 }

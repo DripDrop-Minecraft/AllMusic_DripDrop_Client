@@ -1,4 +1,4 @@
-package coloryr.allmusic.hud;
+package Coloryr.AllMusic.hud;
 
 public class PosOBJ {
     private int x;

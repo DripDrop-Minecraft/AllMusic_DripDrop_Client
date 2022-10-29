@@ -18,7 +18,7 @@
  *----------------------------------------------------------------------
  */
 
-package coloryr.allmusic.player.decoder.mp3;
+package Coloryr.AllMusic.player.decoder.mp3;
 
 /**
  * The <code>DecoderException</code> represents the class of

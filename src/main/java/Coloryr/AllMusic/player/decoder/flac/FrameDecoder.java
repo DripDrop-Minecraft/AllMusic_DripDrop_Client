@@ -19,7 +19,7 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
-package coloryr.allmusic.player.decoder.flac;
+package Coloryr.AllMusic.player.decoder.flac;
 
 import java.io.IOException;
 import java.util.Arrays;

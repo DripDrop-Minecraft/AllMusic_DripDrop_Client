@@ -19,9 +19,9 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
-package coloryr.allmusic.player.decoder.flac;
+package Coloryr.AllMusic.player.decoder.flac;
 
-import coloryr.allmusic.player.APlayer;
+import Coloryr.AllMusic.player.APlayer;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
