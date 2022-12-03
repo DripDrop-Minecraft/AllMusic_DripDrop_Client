@@ -4,94 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a802f46-9f68-41e3-b6f5-fcc4d6a66ded" name="默认变更列表" comment="尝试移除加载图片功能">
+    <list default="true" id="6a802f46-9f68-41e3-b6f5-fcc4d6a66ded" name="默认变更列表" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/AllMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/AllMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/Hud/HudUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/Hud/HudUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/Hud/PosOBJ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/Hud/PosOBJ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/Hud/SaveOBJ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/Hud/SaveOBJ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/mixin/GuiShow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/mixin/GuiShow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/mixin/QuitServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/mixin/QuitServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/mixin/SoundEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/mixin/SoundEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/APlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/APlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/BuffPack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/BuffPack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/IDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/IDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/AbstractFlacLowLevelInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/AbstractFlacLowLevelInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/ByteArrayFlacInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/ByteArrayFlacInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/DataFormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/DataFormatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/FlacDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/FlacDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/FlacLowLevelInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/FlacLowLevelInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/FrameDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/FrameDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/FrameInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/FrameInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/SeekTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/SeekTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/SeekableFileFlacInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/SeekableFileFlacInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/StreamInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/flac/StreamInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/BitReserve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/BitReserve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Bitstream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Bitstream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/BitstreamErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/BitstreamErrors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/BitstreamException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/BitstreamException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Crc16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Crc16.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/DecoderErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/DecoderErrors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/DecoderException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/DecoderException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Equalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Equalizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/FrameDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/FrameDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/JavaLayerErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/JavaLayerErrors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/JavaLayerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/JavaLayerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/JavaLayerHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/JavaLayerHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/JavaLayerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/JavaLayerUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/LayerIDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/LayerIDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/LayerIIDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/LayerIIDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/LayerIIIDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/LayerIIIDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Mp3Decoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Mp3Decoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Obuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/Obuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/OutputChannels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/OutputChannels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/SampleBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/SampleBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/SynthesisFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/SynthesisFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/huffcodetab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coloryr/AllMusic/player/decoder/mp3/huffcodetab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/mixin/Tick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/mixin/Tick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/OggDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/OggDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jogg/Buffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jogg/Buffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jogg/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jogg/Packet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jogg/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jogg/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jogg/StreamState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jogg/StreamState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jogg/SyncState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jogg/SyncState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/ChainingExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/ChainingExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/CodeBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/CodeBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/DecodeExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/DecodeExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Drft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Drft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/DspState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/DspState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Floor0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Floor0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Floor1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Floor1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/FuncFloor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/FuncFloor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/FuncMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/FuncMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/FuncResidue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/FuncResidue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/FuncTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/FuncTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/InfoMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/InfoMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/JOrbisException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/JOrbisException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Lookup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Lookup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Lpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Lpc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Lsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Lsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Mapping0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Mapping0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Mdct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Mdct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/PsyInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/PsyInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/PsyLook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/PsyLook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Residue0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Residue0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Residue1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Residue1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Residue2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Residue2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/StaticCodeBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/StaticCodeBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Time0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Time0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/VorbisFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/jorbis/VorbisFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/oggdecoder/OggData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coloryr/allmusic/player/decoder/ogg/jcraft/oggdecoder/OggData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/allmusic.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/allmusic.mixins.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/allmusic.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allmusic/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allmusic/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +67,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fabric-1.19" />
+        <entry key="$PROJECT_DIR$" value="forge-1.19.2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,6 +77,14 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\IntelliJ IDEA Community Edition 2022.2.4\.m2\repository" />
+        <option name="userSettingsFile" value="E:\IntelliJ IDEA Community Edition 2022.2.4\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1u6tyr1IGNxCO5dqTKJIPCFACzz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -174,16 +100,16 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/OneDrive/Git/AllMusic_DripDrop_Client/src/main/resources/assets/allmusic&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ IDEA Community Edition 2022.2.4/shelves&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2447102&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -202,27 +128,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.AllMusic_M [build]">
-    <configuration name="AllMusic_DripDrop_Client [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="AllMusic_DripDrop_Client [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -256,6 +161,27 @@
         <option name="taskNames">
           <list>
             <option value="genSources" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AllMusic_DripDrop_Client [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -336,8 +262,8 @@
     <list>
       <item itemvalue="Application.Minecraft Client" />
       <item itemvalue="Application.Minecraft Server" />
+      <item itemvalue="Gradle.AllMusic_DripDrop_Client [jar]" />
       <item itemvalue="Gradle.AllMusic_DripDrop_Client [sourcesJar]" />
-      <item itemvalue="Gradle.AllMusic_DripDrop_Client [assemble]" />
       <item itemvalue="Gradle.AllMusic_DripDrop_Client [genSources]" />
       <item itemvalue="Gradle.AllMusic_DripDrop_Client [clean]" />
       <item itemvalue="Gradle.AllMusic_M [build]" />
@@ -346,10 +272,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AllMusic_M [build]" />
+        <item itemvalue="Gradle.AllMusic_DripDrop_Client [jar]" />
         <item itemvalue="Gradle.AllMusic_DripDrop_Client [clean]" />
         <item itemvalue="Gradle.AllMusic_DripDrop_Client [sourcesJar]" />
         <item itemvalue="Gradle.AllMusic_DripDrop_Client [genSources]" />
-        <item itemvalue="Gradle.AllMusic_DripDrop_Client [assemble]" />
       </list>
     </recent_temporary>
   </component>
@@ -402,6 +328,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="USE_CUSTOM_SHELF_PATH" value="true" />
+    <option name="CUSTOM_SHELF_PATH" value="$APPLICATION_HOME_DIR$/shelves" />
+    <option name="MOVE_SHELVES" value="true" />
     <MESSAGE value="尝试移除加载图片功能" />
     <MESSAGE value="废弃更改" />
     <option name="LAST_COMMIT_MESSAGE" value="废弃更改" />

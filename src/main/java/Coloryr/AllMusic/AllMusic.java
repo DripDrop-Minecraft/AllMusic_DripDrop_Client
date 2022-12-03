@@ -31,7 +31,6 @@ public class AllMusic implements ModInitializer {
             e.printStackTrace();
         }
         hudUtils.Lyric = hudUtils.Info = hudUtils.List = "";
-        hudUtils.haveImg = false;
         hudUtils.save = null;
     }
 
@@ -51,8 +50,6 @@ public class AllMusic implements ModInitializer {
                     hudUtils.Info = message.substring(6);
                 } else if (message.startsWith("[List]")) {
                     hudUtils.List = message.substring(6);
-                } else if (message.startsWith("[Img]")) {
-                    hudUtils.setImg(message.substring(5));
                 } else if (message.startsWith("[Pos]")) {
                     nowPlaying.set(message.substring(5));
                 } else if (message.equalsIgnoreCase("[clear]")) {

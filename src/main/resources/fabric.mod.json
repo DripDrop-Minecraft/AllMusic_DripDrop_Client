@@ -4,10 +4,10 @@
   "version": "${version}",
 
   "name": "AllMusic for DripDrop",
-  "description": "Customized for DripDrop, based on Coloryr's project",
+  "description": "Customized for DripDrop, based on Color_yr's project",
   "authors": [
     "Color_yr",
-    "Dell_G3"
+    "DripDrop"
   ],
   "contact": {
     "homepage": "https://www.yuque.com/dripdrop/minecraft",
