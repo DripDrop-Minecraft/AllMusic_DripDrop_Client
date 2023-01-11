@@ -26,6 +26,7 @@ public class AllMusic implements ModInitializer {
     public static void onServerQuit() {
         try {
             nowPlaying.close();
+            nowPlaying.closePlayer();
             hudUtils.close();
         } catch (Exception e) {
             e.printStackTrace();
@@ -79,17 +80,6 @@ public class AllMusic implements ModInitializer {
         hud.draw(stack, item, x, y, 0xffffff);
     }
 
-    public static void drawPic(int textureID, int size, int x, int y) {
-        try {
-            RenderSystem.setShader(GameRenderer::getPositionTexShader);
-            RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-            RenderSystem.setShaderTexture(0, textureID);
-            DrawableHelper.drawTexture(stack, x, y, 0, 0, 0, size, size, size, size);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     public static void runMain(Runnable runnable){
         MinecraftClient.getInstance().execute(runnable);
     }
@@ -98,9 +88,6 @@ public class AllMusic implements ModInitializer {
         return MinecraftClient.getInstance().options.getSoundVolume(SoundCategory.RECORDS);
     }
 
-    public static void reload(){
-
-    }
     @Override
     public void onInitialize() {
         ClientPlayNetworking.registerGlobalReceiver(ID, (client, handler, buffer, responseSender) -> {
