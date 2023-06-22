@@ -2,16 +2,14 @@ package Coloryr.AllMusic;
 
 import Coloryr.AllMusic.Hud.HudUtils;
 import Coloryr.AllMusic.player.APlayer;
-import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.DrawableHelper;
-import net.minecraft.client.render.GameRenderer;
-import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.client.font.TextRenderer;
+import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.Identifier;
-
+import org.joml.Matrix4f;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -21,7 +19,6 @@ public class AllMusic implements ModInitializer {
     public static APlayer nowPlaying;
     public static boolean isPlay = false;
     public static HudUtils hudUtils;
-    public static ExecutorService pool = Executors.newFixedThreadPool(10);
 
     public static void onServerQuit() {
         try {
@@ -73,15 +70,13 @@ public class AllMusic implements ModInitializer {
         }
     }
 
-    private static final MatrixStack stack = new MatrixStack();
-
     public static void drawText(String item, float x, float y){
         var hud = MinecraftClient.getInstance().textRenderer;
-        hud.draw(stack, item, x, y, 0xffffff);
-    }
-
-    public static void runMain(Runnable runnable){
-        MinecraftClient.getInstance().execute(runnable);
+        hud.draw(item, x, y, 0xFFFFFF, false, new Matrix4f(),
+                layer -> null,
+                TextRenderer.TextLayerType.NORMAL,
+                0x00FFFFFF,
+                0x00FFFFFF);
     }
 
     public static float getVolume(){
