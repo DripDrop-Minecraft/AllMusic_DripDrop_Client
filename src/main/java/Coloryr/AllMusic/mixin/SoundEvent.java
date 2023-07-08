@@ -13,7 +13,17 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class SoundEvent {
     @Inject(method = "play(Lnet/minecraft/client/sound/SoundInstance;)V", at = @At("HEAD"), cancellable = true)
     public void play(SoundInstance soundInstance, CallbackInfo info) {
-        if (AllMusic.isPlay) {
+        if (AllMusic.nowPlaying.isPlay()) {
+            SoundCategory data = soundInstance.getCategory();
+            switch (data) {
+                case RECORDS, MUSIC -> info.cancel();
+            }
+        }
+    }
+
+    @Inject(method = "play(Lnet/minecraft/client/sound/SoundInstance;I)V", at = @At("HEAD"), cancellable = true)
+    public void play(SoundInstance soundInstance, int delay, CallbackInfo info) {
+        if (AllMusic.nowPlaying.isPlay()) {
             SoundCategory data = soundInstance.getCategory();
             switch (data) {
                 case RECORDS, MUSIC -> info.cancel();
@@ -23,6 +33,6 @@ public class SoundEvent {
 
     @Inject(method = "reloadSounds", at = @At("RETURN"))
     public void reload(CallbackInfo info){
-        AllMusic.nowPlaying.setReload();
+        AllMusic.reload();
     }
 }

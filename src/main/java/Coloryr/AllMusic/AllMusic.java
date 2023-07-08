@@ -5,20 +5,20 @@ import Coloryr.AllMusic.player.APlayer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.render.VertexConsumerProvider;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.Identifier;
-import org.joml.Matrix4f;
+
 import java.nio.charset.StandardCharsets;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class AllMusic implements ModInitializer {
     public static final Identifier ID = new Identifier("allmusic", "channel");
     public static APlayer nowPlaying;
     public static boolean isPlay = false;
     public static HudUtils hudUtils;
+    private static int ang = 0;
+    private static int count = 0;
+    private static DrawContext context;
 
     public static void onServerQuit() {
         try {
@@ -72,15 +72,22 @@ public class AllMusic implements ModInitializer {
 
     public static void drawText(String item, float x, float y){
         var hud = MinecraftClient.getInstance().textRenderer;
-        hud.draw(item, x, y, 0xFFFFFF, false, new Matrix4f(),
-                layer -> null,
-                TextRenderer.TextLayerType.NORMAL,
-                0x00FFFFFF,
-                0x00FFFFFF);
+        context.drawText(hud, item, (int) x, (int) y, 0xffffff, false);
     }
 
     public static float getVolume(){
         return MinecraftClient.getInstance().options.getSoundVolume(SoundCategory.RECORDS);
+    }
+
+    public static void reload() {
+        if (nowPlaying != null) {
+            nowPlaying.setReload();
+        }
+    }
+
+    public static void update(DrawContext draw) {
+        context = draw;
+        hudUtils.update();
     }
 
     @Override
